@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Saksham Agrawal</title>
+    <link rel="shortcut icon" href="./images/saksham_profile.jpeg" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    
+    
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="fixed top-0 rigth-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./images/saksham_logo.jpeg" alt="logo" class="w-68 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#ambition">Ambition</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+
+            <button><img src="./images/moon_icon.png" alt="moon_icon" class="w-8"></button>
+
+            <a href="#contact"
+            class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact 
+            <img src="./images/arrow-icon.png" alt="call_icon" class="w-4"></a>
+
+            <button class="block md:hidden ml-3">
+                <img src="./images/menu-black.png" alt="" class="w-8 cursor-pointer" onclick="openMenu()">
+            </button>
+
+        </div>
+
+        <!-- mobile menu -->
+         <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4">
+
+            <div class="absolute right-6 top-6">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer" onclick="closeMenu()">
+            </div>
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#ambition" onclick="closeMenu()">Ambition</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+         </ul>
+    </nav>
+
+    <!-- header -->
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/saksham_profile.jpeg" alt="" class="rounded-full w-32">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl md-3">Hi! I'm Saksham Agrawal <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">A Coder & Frontend Developer</h1>
+        <p class="max-w-2xl mx-auto ">I'm a passionate Frontend Developer dedicated to building clean, intuitive, and user-friendly web interfaces. Beyond the frontend, I have a strong background in competitive programming and a deep interest in data structures and algorithms (DSA). I'm constantly expanding my skills and eager to apply them to real-world projects and challenges. </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap flex items-center gap-2 text-white"><img src="./images/right-arrow-white.png" alt="" class="w-4">Contact Me</a>
+
+            <a href="./images/saksham_logo.jpeg" download class="px-10 py-3 border rounded-full border-gray-500 text-wrap flex items-center gap-2 bg-white"><img src="./images/download-icon.png" alt="" class="w-4">My Resume</a>
+        </div>
+    </div>
+
+    <!-- about me -->
+
+     <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg ">Introduction</h4>
+        <h2 class="text-center text-5xl">About Me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/saksham_image.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl">I am an undergraduate student pursuing a B.Tech in Computer Science and Engineering at MMMUT Gorakhpur. I am passionate about web development, I am actively building my skills in full-stack technologies whhile also strengthening my foundation in data structures and algorithms. With a strong focus and commitment to learning, I aim to create efficient, user-friendly web solutions and grow as a versatile software developer.  </p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6 max-w-2xl">
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/code-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML,CSS,JavaSript,C,C++</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/edu-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">Pursuing B.tech in computer science</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/project-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">Builds about 5 projects</p>
+                    </li>
+
+                </ul>
+
+                <h4 class="my-6 text-gray-600">Tools i use</h4>
+
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-sqaure border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500">
+                        <img src="./images/html_logo.png" alt="" class="w-10 sm:w-10">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-sqaure border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500">
+                        <img src="./images/png-transparent-css-logo.png" alt="" class="w-25 sm:w-25">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-sqaure border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500">
+                        <img src="./images/javascript_logo.png" alt="" class="w-40 sm:w-40">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-sqaure border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500">
+                        <img src="./images/c_logo.png" alt="" class="w-10 sm:w-10">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-sqaure border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500">
+                        <img src="./images/cpp_logo.png" alt="" class="w-10 sm:w-10">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+     </div>
+
+
+
+     <!-- my work -->
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg ">My Portfolio</h4>
+        <h2 class="text-center text-5xl">My Latest Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development portfolio! Here are some of my projects showcasing my expertise in front-end development.</p>
+
+        <div class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5">
+
+            <div class="aspect-square bg-[url('./images/portfolio_image.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Portfolio Website</h2>
+                        
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="aspect-square bg-[url('./images/Language_translator.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Language Translator</h2>
+                       
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <a href="https://github.com/Sakshamagr05/Language-Translator"><img src="./images/send-icon.png" alt="" class="w-5"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aspect-square bg-[url('./images/calculator_image.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Calculator</h2>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <a href="https://github.com/Sakshamagr05/Calculator"><img src="./images/send-icon.png" alt="" class="w-5"></a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="aspect-square bg-[url('./images/Amazoneclone_image.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Amazon Clone</h2>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <a href="https://github.com/Sakshamagr05/Amazon-Clone"><img src="./images/send-icon.png" alt="" class="w-5"></a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <a href="#" class="w-max-content flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show More
+            <img src="./images/right-arrow-bold.png" alt="" class="w-4">
+        </a>
+        
+    </div>
+
+    <!-- Ambition -->
+
+    <div id="ambition" class="w-full px-[12%] py-10 scroll-mt-20">
+            <h4 class="text-center mb-2 text-lg ">Future Projects</h4>
+            <h2 class="text-center text-5xl">My Ambition</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Planning to build carrer in full-stack Web Design, UI/UX Design, DSA and AI/ML.</p>
+    
+            <div class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6 my-10">
+    
+                <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./images/web-icon.png" alt="" class="w-10">
+                    <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
+                    <p class="text-sm text-gray-600 leading-5">Web development is the process of building , programming...</p>
+                    <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <img src="./images/right-arrow.png" alt="" class="w-4"></a>
+                </div>
+    
+                <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./images/mobile-icon.png" alt="" class="w-10">
+                    <h3 class="text-lg my-4 text-gray-700">AI/ML</h3>
+                    <p class="text-sm text-gray-600 leading-5">AI and ML are feilds that focuses on making machines smart or...  </p>
+                    <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <img src="./images/right-arrow.png" alt="" class="w-4"></a>
+                </div>
+    
+                <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./images/ui-icon.png" alt="" class="w-10">
+                    <h3 class="text-lg my-4 text-gray-700">UI/UX design</h3>
+                    <p class="text-sm text-gray-600 leading-5">Web development is the process of building , programming...</p>
+                    <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <img src="./images/right-arrow.png" alt="" class="w-4"></a>
+                </div>
+    
+                <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./images/DSA_logo.jpeg" alt="" class="w-10 rounded-xl">
+                    <h3 class="text-lg my-4 text-gray-700">DSA</h3>
+                    <p class="text-sm text-gray-600 leading-5">DSA stands for Data Structure and Algorithm. It helps in...</p>
+                    <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <img src="./images/right-arrow.png" alt="" class="w-4"></a>
+                </div>
+            </div>
+    
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images.footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+        <h4 class="text-center mb-2 text-lg ">Connect With Me</h4>
+        <h2 class="text-center text-5xl">Get in Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd love to hear from you! if you have any questions,comments or feedback, please use the form below.</p>
+
+        <form action="" class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+                <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+            </div>
+            <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit Now
+                <img src="./images/right-arrow-white.png" alt="" class="
+                w-4">
+            </button>
+        </form>
+    </div>
+
+<!-- footer -->
+
+    <div class="mt-20">
+        <div class="text-center">
+            <img src="./images/saksham_logo.jpeg" alt="" class="w-78 mx-auto mb-2">
+            <div class="w-max flex utems-center gap-2 mx-auto">
+                <img src="./images/mail_icon.png" alt="" class="w-6">
+                saksham05agrawal@gmail.com
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p>@ 2025 Saksham Agrawal. All rights reserved.</p>
+            <ul class="flex items-center gap-10  justify-center mt-4 sm:mt-0">
+                <li><a href="https://www.linkedin.com/in/saksham-agrawal-a4a992328">LinkedIn</a></li>
+                <li><a href="https://github.com/Sakshamagr05">GitHub</a></li>
+                <li><a href="https://www.instagram.com/saksham_agrawal_05?igsh=bjQxYm41bnBlc2M3">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
